@@ -1,0 +1,50 @@
+{
+  "name": "kagi-api-client-obsidian",
+  "version": "1.0.0",
+  "description": "A client for the kagi api, using  the obsidian request interface.",
+  "type": "module",
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && DOTENV_CONFIG_PATH=.env jest --setupFiles=dotenv/config"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/NilsKrause/kagi-api-client-obsidian",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilsKrause/kagi-api-client-obsidian.git"
+  },
+  "engines": {
+    "node": ">=14.17"
+  },
+  "keywords": [
+    "kagi",
+    "api",
+    "search",
+    "llm",
+    "summarizer",
+    "fastgpt",
+    "client"
+  ],
+  "author": "Nils Krause",
+  "license": "MIT",
+  "devDependencies": {
+    "obsidian": "^1.4.11",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "dotenv": "^16.4.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
